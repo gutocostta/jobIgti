@@ -1,0 +1,95 @@
+
+// Variables =================================================================
+
+
+
+
+// font ----------------------
+
+$font-family: 'Open Sans', sans-serif !default;
+$font-family-base:  $font-family !default;
+
+$font-size-base: 16px;
+
+$font-weight-light: light !default;
+$font-weight-normal:  normal !default;
+$font-weight-middle:  300 !default;
+$font-weight-bold: 700 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+
+// Colors --------------------
+
+$purple: #720BA6;
+$purple-light: #8833A2;
+$purple-dark: #55026E;
+
+$pink: #CE64EF;
+
+$gray: #C5C5C5;
+$gray-light: #F2F2F2;
+$gray-middle: #B1B1B1;
+$gray-dark: #606060;
+
+$green: #45C211;
+$blue: #3D8AF7;
+$orange: #E79110;
+$yello: #E7C310;
+$red: #D50000;
+$ciano: #05DCD5;
+$acqua: #00B9B3;
+
+// Mixins =================================================================
+
+@mixin clearfix() {
+    &::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+  }
+  
+
+
+
+// body -----------------------
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    min-height: 100%;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, 
+body {
+    height: 100%;
+    font-family: $font-family !important; 
+    line-height: $line-height-base;
+    //font-size: $font-size-base;
+    @include font-size(16);
+    color: $gray-dark;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+    font-smoothing: antialiased;
+}
+
