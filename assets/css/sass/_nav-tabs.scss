@@ -1,0 +1,76 @@
+
+
+// nav-tas ========================================
+
+
+.nav-tabs-watch {
+    
+    a {
+        padding: 0.5rem 0;
+        padding-bottom: 20px;
+        margin: 0 5px;
+        color: $gray-dark;
+        font-size: 1rem;
+        font-weight: $font-weight-normal;
+        border-bottom: 4px solid transparent;
+
+        &:hover,
+        &.active {
+            color: $gray-dark;
+        }
+
+        .lnr {
+            display: block;
+            width: 52px;
+            height: 52px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            font-size: 2rem;
+        }
+
+        &.data {
+            .lnr { color: $blue;}
+            &.active {
+                border-bottom-color: $blue;
+            }
+        }
+
+        &.ia {
+            .lnr { color: $purple;}
+            &.active {
+                border-bottom-color: $purple;
+            }
+        }
+
+        &.dev {
+            .lnr { color: $ciano;}
+            &.active {
+                border-bottom-color: $ciano;
+            }
+        }
+
+        &.gestao {
+            .lnr { color: $green;}
+            &.active {
+                border-bottom-color: $green;
+            }
+        }
+
+        &.marketing {
+            .lnr { color: $orange;}
+            &.active {
+                border-bottom-color: $orange;
+            }
+        }
+
+        &.startup {
+            .lnr { color: $red;}
+            &.active {
+                border-bottom-color: $red;
+            }
+        }
+
+    }
+
+
+}

@@ -8,9 +8,53 @@ V 1.0
 
 @import "_variables.scss";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+//@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 @import "_page-home";
+
+
+@import "_cards.scss";
 @import "_footer";
 @import "_header";
+@import "_nav-tabs";
+@import "_type";
 
 
+
+
+
+// body -----------------------
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: auto;
+    min-height: 100%;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, 
+body {
+    height: 100%;
+    font-family: $font-family !important; 
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+    //@include font-size(16);
+    color: $gray-dark;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    background: #fff url('../images/fundosite.png') top left;
+}
